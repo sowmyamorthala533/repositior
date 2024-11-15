@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //1.University GPA Calculation
+//     function UniversityGPACalculation(course,grade){
+    
+//       switch(grade){
+//       case "A+":
+//            return "10GPA"
+//            break;
+//       case "A":
+//            return "9GPA"
+//            break;
+//     case "B":
+//            return "8GPA"
+//            break;
+//     case "C":
+//            return "7GPA"
+//            break;
+//     case "D":
+//            return "6GPA"
+//            break;
+//     case "E":
+//            return "5GPA"
+//            break;
+//     default:
+//         return "you are fail";
+//         break;
+
+//     }
+// }
+//     let course=prompt("enter the course").toUpperCase()
+//     let grade=prompt("enter the grade").toUpperCase()
+//     console.log(UniversityGPACalculation(course,grade))
+
+//2.Food Court Bill Calculation
+// function FoodCourtBillCalculation(bill,taxes,servicecharge){
+//    let  bills=taxes+servicecharge+bill
+//    return bills
+// }
+// let bill=prompt("enter the bill")
+// let taxes=prompt("enter the taxes")
+// let servicecharge=prompt("enter the servicecharges")
+// console.log(FoodCourtBillCalculation(bill,taxes,servicecharge))
+
+//3.Calculate Simple Interest
+// function CalculateSimpleInterest(principal,rate,time){
+//  let simpleintrest=principal*rate*time
+//  return simpleintrest
+// }
+// let principal=+prompt("enter the amonut")
+// let rate=+prompt("enter the rate of intrest")
+// let time=+prompt("enter the amonut of time")
+// console.log(CalculateSimpleInterest(principal,rate,time))
+
+//4.Library Late Fee
+// function LibraryLateFee(days,rate){
+//    let fees=days*rate
+//    return fees
+// }
+// let days=+prompt("enter the number of overdue days")
+// let rate=+prompt("enter the rate per one day")
+// console.log(LibraryLateFee(days,rate))
+
+//5.Hotel Room Rent Calculation
+// function HotelRoomRentCalculation(days,type){
+// let rateperday
+// switch(type.toLowerCase()){
+//     case "standard":
+//         rateperday=100;
+//         break;
+//     case "deluxe":
+//         rateperday=500;
+//         break;
+//     case "suite":
+//     rateperday=1000;
+//         break;
+// }
+// let rent=rateperday*days
+// return rent
+// }
+// let days=+prompt("enter the no of days")
+// let type=prompt("enter the type of the room like standard,deluxe,suite")
+// console.log(HotelRoomRentCalculation(days,type))
+
+//callback functions
+// function process1(name){
+//  console.log("hello," +name)
+// }
+// function process2(callback){
+//   const name="alice"
+//   callback(name)
+// }
+// process2(process1)
+
+//pure functions
+// function add(a,b){
+//    let sum=a+b
+//    return sum
+// }
+// console.log(add(3,5))
+// console.log(add(3,5))
+
+// function string(name){
+//     return "Hello,"+ name
+// }
+// console.log(string("Sowmya"))
+
+// //impure functions
+// function withdraw(amount){
+//     balance-=amount
+//     return balance
+// }
+// let balance=1000
+// console.log(withdraw(100))
+// console.log(withdraw(100))
+// console.log(withdraw(100))
+
+// function Sum(number){
+//     sum+=number
+//     return sum
+// }
+// let sum=0
+// console.log(Sum(234))
+// console.log(Sum(234))
+// console.log(Sum(234))
+
+//higher  order functions 
+//This is a straightforward example where the higher-order function takes another function as an argument and calls it within the function body.
+// function greeting(greetingfun,greetfun,name){
+//   return greetingfun(greetfun(name))
+// }
+// function fun1(greetfun,name){
+//   return greetfun(name)
+// }
+// function fun2(name){
+//    return "hello,"+name
+// }
+// console.log(greeting(fun1,fun2,"sowmya"))
+
+//function greeting(greetingfun, greetfun, name) {
+ // return greetingfun(greetfun(name));
+//}
+
+// function fun1(greetfun, name) {
+//   return greetfun  
+// }
+
+// function fun2(name) {
+//   return "hello, " + name;  
+// }
+
+// console.log(greeting(fun1, fun2, "sowmya"))
+
+//array methods
+//1.indexof
+// const arr=[1,2,3,4,5]
+// const arr1=arr.indexOf(5)
+// console.log(arr1)
+
+// const arr=[1,2,3,4,5].indexOf(2)
+// console.log(arr)
+
+//2.lastindexof
+// const arr=[1,2,3,4,5]
+// const arr1=arr.lastIndexOf(5)
+// console.log(arr)
+// console.log(arr1)
+
+//3.includes
+// const arr=[1,2,3,4,5].includes(5)
+// console.log(arr)
+
+// 4.findindexof
+// const arr=[1,2,3,4,5]
+// const arr1=arr.findIndexOf(5)
+// console.log(arr)
+// console.log(arr1)
+
+
+//foreach
+const arr=[1,2,3,4,5]
+arr.forEach((number)=>
+{
+    console.log(number*2)
+});console.log(arr)
+
+// const arr1=["sowmya","shruthi"]
+// arr1.forEach((string)=>
+// {
+//     console.log((string+" ").repeat(3).trim())
+// })
+
+//map
+// const arr=[1,2,3,4,5]
+// const arr3=arr.map((number)=>
+// {
+//     return number*2
+// });
+// console.log(arr3)
+// console.log(arr)
+
+
+    </script>
+</body>
+</html>
